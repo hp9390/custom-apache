@@ -4,6 +4,6 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN a2enmod rewrite
 RUN pecl install xdebug-beta
-RUN pecl install apc
-RUN docker-php-ext-enable apc
+RUN pecl install apcu
+RUN docker-php-ext-enable apcu
 RUN docker-php-ext-enable xdebug
