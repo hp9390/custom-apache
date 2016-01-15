@@ -1,4 +1,4 @@
-FROM php:7.0.1-apache
+FROM php:5.6.17-apache
 
 RUN apt-get update
 RUN apt-get upgrade -y
